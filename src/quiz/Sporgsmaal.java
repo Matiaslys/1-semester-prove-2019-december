@@ -25,7 +25,7 @@ public class Sporgsmaal implements Translatable {
 
     public void setPoint(int point) {
         if (point > 10) {
-            throw new IllegalArgumentException("Spørgsmål må maks. være 100 tegn.");
+            throw new IllegalArgumentException("Du har 10 point du har allerede vundet.");
         }
         this.point = point;
     }
