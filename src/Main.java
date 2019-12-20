@@ -1,15 +1,19 @@
-/**
- * Developed by András Ács (acsandras@gmail.com)
- * Zealand / www.zealand.dk
- * Licensed under the MIT License
- * 13/12/2019
- */
+
 
 public class Main {
 
-    // TODO Din kode her
+    public static void main(String[] args) {
+    hello("András");
+    hello("");
 
-    public String hello(String navn) {
+    }
+
+    public static String hello(String navn) {
+        if (navn.equals("")) {
+            System.out.println("Hello World!");
+        } else {
+            System.out.println("Hello " +  navn);
+        }
         return "";
     }
 
