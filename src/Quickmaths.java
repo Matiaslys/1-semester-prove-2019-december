@@ -27,8 +27,8 @@ public class Quickmaths {
         int Anden = scanner.nextInt();
         System.out.println("Sum: " + math.Sum(First,Anden));
         System.out.println("Gennemsnit: " + math.gennemsnit(First,Anden));
+        System.out.println("--------------");
     }
-
     }
 
     public static void main(String[] args) {
