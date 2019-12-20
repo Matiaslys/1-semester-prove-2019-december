@@ -1,6 +1,6 @@
 package quiz;
 
-public class Svar extends Sporgsmaal {
+public class Svar extends Sporgsmaal implements Translatable {
     private String svarTekst;
 
     public Svar(String svarTekst) {
