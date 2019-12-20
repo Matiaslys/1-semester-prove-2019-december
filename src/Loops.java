@@ -9,7 +9,7 @@ import java.util.Scanner;
  */
 
 public class Loops {
-
+ // her har vi et array som holder styr på brugerene
     private String brugere[] = {"Anders", "Birgit", "Carsten", "Dennis", "Esben"};
 
     public String[] getBrugere() {
@@ -28,8 +28,9 @@ public class Loops {
     /**
      * Viser en liste med brugere i konsollen
      */
-    public void printBrugereArr() {
 
+    public void printBrugereArr() {
+        //her bruger jeg et for loop til få vist brugerene
         for (int i = 0; i < brugere.length ; i++) {
             System.out.print(brugere[i] + " ");
         }
@@ -40,6 +41,7 @@ public class Loops {
      * Viser en liste med brugere i konsollen i omvendt rækkefølge
      */
     public void printBrugereReverseArr() {
+        //her bruger jeg et for loop til få vist brugerene baglæns
         for (int i = brugere.length - 1; i >= 0 ; i--) {
             System.out.print(brugere[i] + " ");
         }
@@ -50,6 +52,7 @@ public class Loops {
     public void waitingFor0() {
         Scanner scanner = new Scanner(System.in);
         int tal = 1000;
+        // her bruger jeg et while loop som man er fanget i indtil man skriver 0 i scanneren
         while (!(tal == 0)) {
             System.out.print("Venter på 0! Skriv et tal... ");
              tal = scanner.nextInt();

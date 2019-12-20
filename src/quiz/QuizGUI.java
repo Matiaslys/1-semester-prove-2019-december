@@ -15,6 +15,7 @@ public class QuizGUI extends Application {
     }
 
     @Override
+    // her har vi min gui application for quiz programmet.
     public void start(Stage primaryStage) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("../quiz/QuizFxml.fxml"));
         primaryStage.setTitle("Quiz");

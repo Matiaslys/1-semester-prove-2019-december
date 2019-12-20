@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 public class QuickmathsTest {
 
     @Test
+    //her har vi test af lommeregnerens sum
     public void testSum() {
         Quickmaths math = new Quickmaths();
         int a = 12;
@@ -15,6 +16,7 @@ public class QuickmathsTest {
     }
 
     @Test
+    //her har vi test af lommeregnerens gennemsnit beregning
     public void testGennemsnit() {
         Quickmaths math = new Quickmaths();
         int a = 10;
