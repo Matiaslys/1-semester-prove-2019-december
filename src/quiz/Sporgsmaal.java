@@ -13,7 +13,7 @@ public class Sporgsmaal {
     public void setSporgsmaalTekst(String sporgsmaalTekst) {
         StringBuilder words = new StringBuilder();
 
-        if (sporgsmaalTekst < 0 || sporgsmaalTekst > 100) {
+        if (sporgsmaalTekst.length() > 100) {
             throw new IllegalArgumentException("Spørgsmål må maks. være 100 tegn.");
         }
         SporgsmaalTekst = sporgsmaalTekst;
@@ -24,6 +24,9 @@ public class Sporgsmaal {
     }
 
     public void setPoint(int point) {
+        if (point > 10) {
+            throw new IllegalArgumentException("Spørgsmål må maks. være 100 tegn.");
+        }
         this.point = point;
     }
 

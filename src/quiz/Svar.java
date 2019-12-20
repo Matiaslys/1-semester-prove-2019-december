@@ -1,6 +1,6 @@
 package quiz;
 
-public class Svar {
+public class Svar extends Sporgsmaal {
     private String svarTekst;
 
     public Svar(String svarTekst) {
